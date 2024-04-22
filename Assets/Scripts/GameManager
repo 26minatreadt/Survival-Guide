@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GameManager : MonoBehaviour
+{
+    public GameObject[] SpawnList = new GameObject[3];
+    public List<GameObject> objectsCreated = new List<GameObject>;
+    public int SpawnCount { get; set; }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(Keycode.Space))
+        {
+            if (SpawnCount == 10)
+            {
+                _initColorChange = true;
+                return;
+            }
+        }
+    }
+}
