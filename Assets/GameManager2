@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Test
+{
+    GameMangaer gm = GameManager2();
+    public Test()
+    {
+        gm.Name
+    }
+}
+public class GameManager2 : MonoBehaviour
+{
+    //create properties for the following:
+    //speed (read only)
+    //name (public)
+
+  public string Name { get; set;}
+ 
+    
+}
